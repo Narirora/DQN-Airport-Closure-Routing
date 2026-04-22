@@ -79,3 +79,23 @@
 
 ```bash
 pip install torch pandas numpy matplotlib geopy openpyxl
+```
+### 2. Run Simulation / シミュレーションの実行
+[EN] Open your terminal in the folder where all the files are gathered, and run the following commands:
+[JP] すべてのファイルを集めたフォルダでターミナルを開き、以下のコマンドを実行してください：
+
+* For the Fuel-Centric simulation (燃料重視モデルの実行):
+
+```bash
+python simulate_dqn_all_fuel.py
+```
+
+* For the Passenger-Centric simulation (旅客利便性重視モデルの実行):
+
+```bash
+python simulate_dqn_all.py
+```
+
+### 2. Output / 実行結果
+[EN] The results will be saved as CSV files (e.g., simulation_results_reroutefinalfuel.csv) in the same folder.
+[JP] 実行結果は同じフォルダ内にCSVファイルとして保存され、各フライトが選択した代替空港およびスコアの詳細を確認できます。
