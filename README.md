@@ -65,3 +65,17 @@
 ├── data/                # Sample flight logs and BADA data
 ├── results/             # Simulation output CSVs & Visualization graphs
 └── README.md
+
+## How to Run / 実行方法
+
+### Important Notice / 注意事項
+[EN] To run the simulation scripts without any file path errors, please ensure that all Python scripts (.py), model weights (.pt), and data files (.csv, .xlsx) are downloaded and placed in the same single directory (folder) before execution.
+
+[JP] パス（ファイル位置）エラーを防ぐため、シミュレーションを実行する前に、すべてのPythonスクリプト（.py）、モデルの重み（.pt）、およびデータファイル（.csv, .xlsx）をダウンロードし、同じ単一のディレクトリ（フォルダ）内に配置してから実行してください。
+
+### 1. Install Dependencies / 依存関係のインストール
+[EN] Ensure you have Python 3 installed, then install the required packages:
+[JP] Python 3がインストールされていることを確認し、必要なパッケージをインストールします：
+
+```bash
+pip install torch pandas numpy matplotlib geopy openpyxl
