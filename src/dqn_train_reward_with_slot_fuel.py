@@ -10,8 +10,8 @@ from env_with_slot_fixed_fuelpersp import RerouteEnv
 import os
 
 # 기존 모델 삭제 (선택사항)
-if os.path.exists("dqn_model_eta_based.pt"):
-    os.remove("dqn_model_eta_based.pt")
+if os.path.exists("dqn_model_eta_based_fuel_2.pt"):
+    os.remove("dqn_model_eta_based_fuel_2.pt")
 
 # 최대 가능한 divert 공항 수 (예: 기존 5개 + 출발공항까지)
 MAX_OUTPUT_DIM = 10
