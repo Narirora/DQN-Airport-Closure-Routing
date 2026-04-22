@@ -1,4 +1,3 @@
-# DQN-Airport-Closure-Routing
 # Deep-Q-Network-Based Optimization Framework for Diversion Using Real Flight Data in Airport Closure
 **空港閉鎖時における実飛行データを用いたDQNベースのダイバート（代替着陸）最適化フレームワーク**
 
@@ -6,6 +5,13 @@
 [EN] This project presents an AI-driven decision-making framework designed to optimize aircraft diversions during sudden airport closures (e.g., severe weather or natural disasters). By utilizing Deep Q-Network (DQN) algorithms integrated with real flight trajectory data and BADA (Base of Aircraft Data) performance models, it identifies the optimal alternate airports for multiple aircraft in real-time.
 
 [JP] 本プロジェクトは、悪天候や災害などによる突発的な空港閉鎖時に、飛行中の航空機が安全かつ効率的に代替空港へ向かう（ダイバート）ための意思決定を最適化するAIフレームワークです。実飛行データおよびBADA（航空機性能データ）を統合した環境下でDQN（深層強化学習）アルゴリズムを適用し、リアルタイムで最適な代替空港を算出します。
+
+## System Architecture / システム構成
+[EN] The following diagram illustrates the integrated logical flow of the proposed framework. It visualizes how raw flight trajectory data and BADA performance models are processed within the reinforcement learning environment to output optimized diversion decisions.
+
+[JP] 本フレームワークの論理的なデータフローを以下に示します。生の飛行軌跡データとBADA（航空機性能データ）モデルがどのように強化学習環境に統合され、最適化されたダイバート（代替着陸）決定が出力されるかを可視化しています。
+
+![System Architecture](./images/overall%20flow.PNG)
 
 ## Core Strategy: Business Trade-off Optimization / 核心となる戦略：ビジネス指標の最適化
 [EN] The core differentiation of this project is the implementation of two distinct optimization models handling business trade-offs: Fuel Efficiency (Carbon Neutrality & Cost) vs. Passenger Convenience (Time & Customer Experience).
@@ -28,14 +34,19 @@
 * Environment: Custom Python simulation environment mapping raw flight CSV logs into a Reinforcement Learning pipeline.
 
 ## Learning Curve / 学習曲線
-![DQN Learning Curve for Fuel](./results/dqn_reward_curve_from_csv_fuel.png)
+[EN] The graphs below demonstrate that as the epochs progress, the agent successfully converges to maximize the cumulative reward in both given environments.
 
+[JP] 下記のグラフは、エポックが進むにつれてエージェントが各環境下での報酬を最大化する方向へ安定して収束していることを示しています。
+
+![DQN Learning Curve for Fuel](./results/dqn_reward_curve_from_csv_fuel.png)
 ![DQN Learning Curve for Passenger](./results/dqn_reward_curve_from_csv_passenger.png)
 
+## Documents / 関連文書
+[EN] For academic details regarding the mathematical formulations, research methodology, and comprehensive experimental results, please refer to the following documents.
 
-[EN] The graph above demonstrates that as the epochs progress, the agent successfully converges to maximize the cumulative reward in the given environment.
+[JP] 数式モデル、研究手法、および詳細な実験結果など、学術的な背景については以下のドキュメントを参照してください。
 
-[JP] 上記のグラフは、エポックが進むにつれてエージェントが環境下での報酬を最大化する方向へ安定して収束していることを示しています。
+* [Research Abstract (PDF)](./documents/Abstract%20-%20Choi%20Wonwoo_1TE19966R.pdf)
 
 ## Tech Stack / 技術スタック
 * Language: Python 3
@@ -45,6 +56,8 @@
 
 ## Repository Structure / ディレクトリ構成
 ```text
+├── documents/           # Academic papers and abstracts (PDF)
+├── images/              # System architecture and flow diagrams
 ├── envs/                # RL Environments (Fuel-centric & Passenger-centric)
 ├── src/                 # DQN Training & Simulation scripts
 ├── models/              # Pre-trained PyTorch Model Weights (.pt)
