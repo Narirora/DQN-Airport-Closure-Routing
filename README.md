@@ -27,7 +27,7 @@
 * Environment: Custom Python simulation environment mapping raw flight CSV logs into a Reinforcement Learning pipeline.
 
 ## Learning Curve / 学習曲線
-*(Upload dqn_reward_curve_from_csv_fuel.png here / ここに学習曲線の画像をドラッグ＆ドロップしてください)*
+![DQN Learning Curve](./results/dqn_reward_curve_from_csv.png)
 
 [EN] The graph above demonstrates that as the epochs progress, the agent successfully converges to maximize the cumulative reward in the given environment.
 [JP] 上記のグラフは、エポックが進むにつれてエージェントが環境下での報酬を最大化する方向へ安定して収束していることを示しています。
