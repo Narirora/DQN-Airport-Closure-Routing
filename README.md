@@ -9,6 +9,7 @@
 
 ## Core Strategy: Business Trade-off Optimization / 核心となる戦略：ビジネス指標の最適化
 [EN] The core differentiation of this project is the implementation of two distinct optimization models handling business trade-offs: Fuel Efficiency (Carbon Neutrality & Cost) vs. Passenger Convenience (Time & Customer Experience).
+
 [JP] 本研究の最大の特徴は、単一の目標ではなく、相反する2つのビジネス指標（燃料効率/カーボンニュートラル vs 旅客の利便性/顧客体験）を基準に、それぞれ異なる報酬（Reward）関数を設計・評価した点にあります。
 
 ### 1. Fuel-Centric Model (燃料・CO2削減重視モデル)
@@ -30,6 +31,7 @@
 ![DQN Learning Curve](./results/dqn_reward_curve_from_csv.png)
 
 [EN] The graph above demonstrates that as the epochs progress, the agent successfully converges to maximize the cumulative reward in the given environment.
+
 [JP] 上記のグラフは、エポックが進むにつれてエージェントが環境下での報酬を最大化する方向へ安定して収束していることを示しています。
 
 ## Tech Stack / 技術スタック
