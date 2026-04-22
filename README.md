@@ -46,7 +46,8 @@
 
 [JP] 数式モデル、研究手法、および詳細な実験結果など、学術的な背景については以下のドキュメントを参照してください。
 
-* [Research Abstract (PDF)](./documents/Abstract%20-%20Choi%20Wonwoo_1TE19966R.pdf)
+* [Research Abstract (PDF)](./documents/Abstract%20-%20Choi%20Wonwoo.pdf)
+* [Research Thesis (PDF)](./documents/Graduation%20Thesis%20-%20Choi%20Wonwoo.pdf)
 
 ## Tech Stack / 技術スタック
 * Language: Python 3
